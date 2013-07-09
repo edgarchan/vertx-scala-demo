@@ -1,0 +1,1 @@
+This project creates a very simple Vert.x module.
