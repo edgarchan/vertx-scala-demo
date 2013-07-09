@@ -1,6 +1,6 @@
-package demo;
+package demo
 
-import org.vertx.scala.core.eventbus.Message;
+import org.vertx.scala.core.eventbus.Message
 import org.vertx.scala.platform.Verticle
 import org.vertx.java.core.AsyncResult
 import org.vertx.java.core.json.JsonObject
@@ -34,7 +34,7 @@ class GameVerticle extends Verticle {
   
   override def start() {
 
-    container.logger().info("Starting game...");    
+    container.logger().info("Starting game...")
     
     vertx.eventBus.registerHandler("game")(    
      (msg: Message[JsonObject]) => {
