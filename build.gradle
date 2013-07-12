@@ -62,7 +62,7 @@ dependencies {
   //provided "io.vertx:mod-lang-scala:$scalaLangModVersion@jar"
   provided "org.scala-lang:scala-library:$scalaVersion"
   provided "org.scala-lang:scala-compiler:$scalaVersion"
-  provided "io.vertx:mod-lang-scala:$scalaLangModVersion"
+  provided "io.vertx:lang-scala:$scalaLangModVersion"
 }
 
 test {

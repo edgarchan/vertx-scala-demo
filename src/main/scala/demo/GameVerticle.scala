@@ -28,8 +28,8 @@ class GameVerticle extends Verticle {
   def announce(r:Round, winner:String, num:String){
     val p1 = r.p1Move.name
     val p2 = r.p2Move.name
-    container.logger().info(s"Round ..$num")
-    container.logger().info(s"Player1: $p1, Player2: $p2 ... the winner is $winner")
+    println(s"Round ..$num")
+    println(s"Player1: $p1, Player2: $p2 ... the winner is $winner")
   }
   
   override def start() {

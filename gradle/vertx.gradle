@@ -171,11 +171,13 @@ def runModWithClasspath(URL[] classpath) {
 
 task runMod(dependsOn: copyMod, description: 'Run the module using all the build dependencies (not using installed vertx') << {
   setSysProps()
+  System.setProperty("vertx.langs.scala", "io.vertx~lang-scala~2.0.0-SNAPSHOT:org.vertx.scala.platform.impl.ScalaVerticleFactory")  
   def pm = PlatformLocator.factory.createPlatformManager()
   def latch = new CountDownLatch(1)
+    
   pm.deployModule(moduleName, null, 1, new AsyncResultHandler<String>() {
     public void handle(AsyncResult<String> asyncResult) {
-      if (asyncResult.succeeded()) {
+      if (asyncResult.succeeded()) {        
         println "CTRL-C to stop server"
       } else {
         println "Failed to deploy module"
@@ -210,7 +212,7 @@ task pullInDeps(dependsOn: copyMod, description: 'Pull in all the module depende
 }
 
 def setSysProps() {
-  System.setProperty("vertx.mods", "build/mods")
+  System.setProperty("vertx.mods", "build/mods")    
 }
 
 def loadProperties(String sourceFileName) {
