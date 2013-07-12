@@ -6,10 +6,19 @@ Based on the article http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-c
 
 
 * Clone this branch
+
+```
   https://github.com/edgarchan/mod-lang-scala/tree/platform_adjst
+```
 
 * Install it on local repo
+
+```
   ./gradlew install
+```
 
 * Clone this demo and run
-   ./gradlew runMod
+
+```
+  ./gradlew runMod
+```
