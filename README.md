@@ -11,13 +11,13 @@ Based on the article http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-c
   https://github.com/edgarchan/mod-lang-scala/tree/platform_adjst
 ```
 
-* Install it on local repo
+* Install it on your local repo
 
 ```
   ./gradlew install
 ```
 
-* Clone this demo and run
+* Clone this project and run
 
 ```
   ./gradlew runMod
