@@ -2,7 +2,6 @@ package demo
 
 import org.vertx.scala.core.eventbus.Message
 import org.vertx.scala.platform.Verticle
-import org.vertx.java.core.AsyncResult
 import org.vertx.java.core.json.JsonObject
 import scala.collection.concurrent.TrieMap
 
