@@ -5,7 +5,7 @@ School yard game Rock-Paper-Scissors.
 Based on the article http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html
 
 
-* Clone this branch
+* Clone this lang-scala branch
 
 ```
   https://github.com/edgarchan/mod-lang-scala/tree/platform_adjst
@@ -17,7 +17,7 @@ Based on the article http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-c
   ./gradlew install
 ```
 
-* Clone this project and run
+* Then clone this project and run
 
 ```
   ./gradlew runMod
