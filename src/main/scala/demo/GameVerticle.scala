@@ -2,8 +2,8 @@ package demo
 
 import org.vertx.scala.core.eventbus.Message
 import org.vertx.scala.platform.Verticle
-import org.vertx.java.core.json.JsonObject
 import scala.collection.concurrent.TrieMap
+import org.vertx.scala.core.json._
 
 abstract class Move(val name:String)
 case object Rock extends Move("Rock")
